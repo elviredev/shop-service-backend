@@ -22,7 +22,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        super.configure(http); // config par défaut
+        //super.configure(http); // config par défaut
+        http.csrf().disable(); // desactiver le csrf token
+        //http.authorizeRequests().anyRequest().permitAll();
     }
 
     @Bean
