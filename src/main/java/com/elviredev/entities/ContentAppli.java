@@ -17,6 +17,7 @@ public class ContentAppli implements Serializable {
     @Id
     private String idContent;
     private String contentName;
+    private boolean selected;
     @DBRef
     private CoachedAppli coachedAppli;
 }
